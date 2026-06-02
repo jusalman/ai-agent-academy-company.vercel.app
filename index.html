@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-KR" data-theme="light" style=""><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true">
+<html lang="ko-KR" data-theme="light" style=""><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true">
 
 
     <title>단 10만 원으로 구축하는 AI 에이전트 시스템 | 기업 전용 정부 지원 교육</title>
@@ -186,12 +186,9 @@
         font-weight: 600;
         color: var(--text-gray);
         display: block;
-        line-height: 1.45;
-        overflow-wrap: anywhere;
       }
       .seats-number {
-        font-size: 28px;
-        line-height: 1.25;
+        font-size: 36px;
         font-weight: 800;
         color: var(--orange);
         margin-bottom: 12px;
@@ -205,9 +202,9 @@
         overflow: hidden;
       }
       .progress-fill {
-        width: 100%;
+        width: 65%;
         height: 100%;
-        background: #cbd5e1;
+        background: var(--orange);
       }
       .price-box {
         margin-bottom: 24px;
@@ -220,8 +217,7 @@
         margin-bottom: 4px;
       }
       .price-final {
-        font-size: 28px;
-        line-height: 1.25;
+        font-size: 32px;
         font-weight: 800;
         color: var(--orange);
       }
@@ -624,34 +620,6 @@
         text-align: center;
         margin-top: 16px;
       }
-      .consult-notice-title {
-        font-size: 24px;
-        line-height: 1.35;
-        color: var(--deep-navy);
-        margin-bottom: 12px;
-      }
-      .consult-notice-text {
-        color: var(--text-gray);
-        font-size: 16px;
-        line-height: 1.6;
-      }
-      .consult-check-list {
-        list-style: none;
-        margin: 28px 0;
-      }
-      .consult-check-list li {
-        display: flex;
-        gap: 10px;
-        align-items: flex-start;
-        color: var(--text-dark);
-        font-weight: 600;
-        margin-bottom: 14px;
-      }
-      .consult-check-list li::before {
-        content: '✓';
-        color: var(--orange);
-        font-weight: 900;
-      }
 
       /* Official Curriculum & Payment */
       section.official-info {
@@ -921,43 +889,6 @@
 
       /* Responsive */
       @media (max-width: 768px) {
-        body {
-          overflow-x: hidden;
-          padding-bottom: 86px;
-        }
-        .container {
-          padding: 0 18px;
-        }
-        h1,
-        h2,
-        h3,
-        p,
-        li,
-        strong,
-        span {
-          word-break: keep-all;
-        }
-        header.top-nav .container {
-          gap: 12px;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .logo {
-          flex: 1 1 auto;
-          font-size: 16px;
-          line-height: 1.2;
-          min-width: 0;
-        }
-        .header-cta {
-          flex: 0 0 auto;
-          min-height: 40px;
-          padding: 8px 12px;
-          font-size: 12px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          white-space: nowrap;
-        }
         .hero-grid,
         .ps-grid,
         .ko-grid,
@@ -969,213 +900,31 @@
         .official-list {
           grid-template-columns: 1fr;
         }
-        .hero-grid,
-        .form-grid {
-          gap: 28px;
+        .ps-arrow {
+          transform: rotate(90deg);
+          margin: 16px 0;
         }
-        .ko-grid,
-        .official-grid,
-        .testimonial-grid {
-          gap: 20px;
-        }
-        section.hero {
-          padding: 46px 0 58px;
-        }
-        .hero-badge-top {
-          margin-bottom: 16px;
-          font-size: 13px;
+        .step-arrow {
+          transform: rotate(90deg);
+          margin: 16px 0;
         }
         .hero h1 {
-          font-size: 30px;
-          line-height: 1.15;
-          margin-bottom: 7px;
-          letter-spacing: 0;
-        }
-        .hero-sub {
-          max-width: 100%;
-          margin-bottom: 24px;
-          font-size: 16px;
-          line-height: 1.6;
-          overflow-wrap: break-word;
-        }
-        .hero-badges {
-          gap: 10px;
-        }
-        .hero-badge-item {
-          padding: 9px 14px;
-          font-size: 14px;
-          line-height: 1.35;
-        }
-        .ps-arrow,
-        .step-arrow {
-          min-height: 30px;
-          margin: 6px 0;
-          font-size: 0;
-          transform: none;
-        }
-        .ps-arrow::before,
-        .step-arrow::before {
-          content: '↓';
-          font-size: 28px;
-          line-height: 1;
-          color: var(--orange);
-        }
-        .btn-primary {
-          min-height: 48px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .hero-content,
-        .hero-card,
-        .ps-card,
-        .ko-card,
-        .step-card,
-        .form-card,
-        .official-card,
-        .payment-card,
-        .testimonial-card {
-          min-width: 0;
-        }
-        .hero-card,
-        .ps-card,
-        .ko-card,
-        .step-card,
-        .process-safebox,
-        .form-card,
-        .official-card,
-        .payment-card,
-        .testimonial-card,
-        .testimonial-summary {
-          padding: 24px;
-        }
-        .hero-card {
-          padding: 22px;
-        }
-        .section-title {
-          font-size: 28px;
-          line-height: 1.28;
-        }
-        .section-subtitle {
-          margin-bottom: 34px;
-          font-size: 16px;
-          line-height: 1.7;
-        }
-        .ps-grid,
-        .ko-grid {
-          margin-top: 28px;
-        }
-        .ps-card h3,
-        .step-card h3 {
-          font-size: 20px;
-        }
-        .ko-card h3,
-        .payment-card h3 {
-          font-size: 24px;
-          line-height: 1.35;
-        }
-        .official-card h3,
-        .testimonial-summary h3,
-        .consult-notice-title {
-          font-size: 22px !important;
-          line-height: 1.35;
-        }
-        .seats-number,
-        .price-final {
-          font-size: 24px;
-        }
-        .seats-label,
-        .payment-flow li,
-        .testimonial-card p,
-        .form-info-list li,
-        .consult-check-list li,
-        .official-list-item strong {
-          overflow-wrap: anywhere;
-        }
-        .hero-card-cta,
-        .payment-link,
-        .form-submit-btn {
-          width: 100%;
-          min-height: 54px;
-          padding: 14px 18px;
-          font-size: 16px;
-          line-height: 1.35;
+          font-size: 32px;
         }
         section {
-          padding: 52px 0;
+          padding: 50px 0;
         }
         .process-banner {
           flex-direction: column;
           text-align: center;
           gap: 8px;
-          margin-bottom: 32px;
-          padding: 16px 20px;
-          font-size: 16px;
-        }
-        .process-banner span:nth-child(2) {
-          display: none;
-        }
-        .process-grid {
-          margin-bottom: 32px;
-        }
-        .step-num {
-          width: 52px;
-          height: 52px;
-          font-size: 22px;
         }
         .form-group.half-grid {
           grid-template-columns: 1fr;
         }
-        .form-info-list {
-          margin-top: 24px;
-        }
-        .consult-check-list {
-          margin: 24px 0;
-        }
         .testimonial-summary {
           flex-direction: column;
           align-items: flex-start;
-          margin-bottom: 24px;
-        }
-        .score-badge {
-          width: 100%;
-        }
-        footer {
-          padding: 34px 0 110px;
-        }
-        .footer-flex {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 18px;
-        }
-        .footer-flex > div {
-          width: 100%;
-          text-align: left !important;
-        }
-        .sticky-cta {
-          left: auto;
-          right: 18px;
-          bottom: 16px;
-          width: auto;
-          min-width: 178px;
-          max-width: calc(100vw - 36px);
-          min-height: 54px;
-          padding: 14px 18px;
-          justify-content: center;
-          font-size: 15px;
-          line-height: 1.3;
-        }
-      }
-
-      @media (max-width: 430px) {
-        body {
-          padding-bottom: 0;
-        }
-        footer {
-          padding-bottom: 34px;
-        }
-        .sticky-cta {
-          display: none;
         }
       }
     </style>
@@ -1185,7 +934,7 @@
     <header class="top-nav">
       <div class="container">
         <div class="logo">AI Agent Academy | B2B</div>
-        <a href="https://rapa-ai.or.kr/contact" class="btn-primary header-cta">무료 상담 신청</a>
+        <a href="#consult-form" class="btn-primary header-cta">무료 상담 신청</a>
       </div>
     </header>
 
@@ -1195,26 +944,47 @@
         <div class="hero-content">
           <span class="hero-badge-top">🏢 기업/법인 전용 정부 지원 과정</span>
           <h1>단 10만 원으로 구축하는</h1><h1>우리 회사 맞춤형&nbsp;</h1><h1><span style="color: #ff6b35">AI 에이전트 워크샵</span></h1>
-          <p class="hero-sub">조건 충족 시 최대 90% 환급 가능 | 기업/법인 전용 임직원 코스 | 한국생산성본부 주관 2026 인재키움 사업</p>
+          <p class="hero-sub">정부 지원 90% 환급 | 기업/법인 전용&nbsp;<span style="color: rgb(184, 197, 214);
+        font-family: Pretendard, 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        orphans: 2;
+        text-align: start;
+        text-indent: 0px;
+        text-transform: none;
+        widows: 2;
+        word-spacing: 0px;
+        -webkit-text-stroke-width: 0px;
+        white-space: normal;
+        background-color: rgb(10, 37, 64);
+        text-decoration-thickness: initial;
+        text-decoration-style: initial;
+        text-decoration-color: initial;
+        display: inline !important;
+        float: none;">임직원<span>&nbsp;</span></span>코스&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 한국생산성본부 주관 2026 인재키움 사업</p>
           <div class="hero-badges">
             <div class="hero-badge-item">⏱ 1일 7시간 단기 집중 코스</div>
             <div class="hero-badge-item">👥 기수당 최대 20명 선착순 마감</div>
-            <div class="hero-badge-item">📍 서울 중구 오프라인 교육</div>
+            <div class="hero-badge-item">📍 동대문구 오프라인 교육</div>
           </div>
         </div>
 
         <div class="hero-card">
           <span class="card-badge-fire">🔥 모집 중</span>
-          <span class="seats-label">[터미널 설치와 나만의 에이전트 구축①(난이도下)] 모집 현황</span>
-          <div class="seats-number">상담 시 잔여석 확인</div>
+          <span class="seats-label">[터미널 설치와 나만의 에이전트 구축①(난이도下)] 잔여</span>
+          <div class="seats-number">7석 / 20석</div>
           <div class="progress-bar">
             <div class="progress-fill"></div>
           </div>
           <div class="price-box">
             <span class="price-original">정가 100만원(인 당)</span>
-            <span class="price-final">최대 환급 시<br>10만원 수준</span>
+            <span class="price-final">기업 실부담 10만원</span>
           </div>
-          <a href="https://rapa-ai.or.kr/contact" class="btn-primary hero-card-cta">지금 무료 상담 신청하기 →</a>
+          <a href="#consult-form" class="btn-primary hero-card-cta">지금 무료 상담 신청하기 →</a>
           <p class="hero-card-note">✓ 영업일 기준 24시간 내 답변</p>
         </div>
       </div>
@@ -1225,7 +995,7 @@
       <div class="container">
         <div class="text-center">
           <span class="label-small">WHY AI AGENT?</span>
-          <h2 class="section-title">유튜브에 이론은 다 있는데,&nbsp;</h2><h2 class="section-title">&nbsp;왜 막상 우리는 적용이 안 될까?</h2>
+          <h2 class="section-title">유튜브에 이론은 다 있는데,&nbsp;</h2><h2 class="section-title">&nbsp;왜 막상 우리는 적용이 안될까?</h2>
           <p class="section-subtitle">기존의 단순 겉핥기식 교육이 아닌, 현업에 적용할 수 있도록&nbsp;</p>
         </div>
 
@@ -1246,7 +1016,7 @@
             <span class="ps-label after">✓ AFTER</span>
             <h3>업무를 자동화하는 'AI 에이전트 구축'</h3>
             <ul class="ps-list">
-              <li>실패 딛고 구현까지, 쉽게 쓸 수 있어 AI 습관화</li>
+              <li>실패 딛고 구현까지, 쉽게 쓸 수 있어 Ai습관화</li>
               <li><span style="color: rgb(255, 255, 255);
         font-family: Pretendard, 'Noto Sans KR', sans-serif;
         font-size: 16px;
@@ -1308,7 +1078,7 @@
           <div class="ko-card">
             <div class="ko-icon">BENEFIT 02</div>
             <h3>희망 AI 전문가 섭외</h3>
-            <p>우리 회사에 알맞은 AI 전문가 섭외 대행합니다.</p>
+            <p>우리 회사에 알맞는 AI 전문가 섭외 대행합니다.</p>
             <ul class="ko-list">
               <li>희망 전문가 직접 지정 가능</li>
               <li>섭외 대행 100% 무료 진행</li>
@@ -1326,7 +1096,7 @@
       <div class="container">
         <div class="text-center">
           <span class="label-small">SAFE &amp; EASY PROCESS</span>
-          <h2 class="section-title">필수 절차는 안내받고,<br>조건 충족 시 환급을 진행합니다</h2>
+          <h2 class="section-title">복잡한 행정은 ZERO,<br>사측은 결제만 하시면 OK</h2>
         </div>
 
         <div class="process-banner">
@@ -1347,24 +1117,24 @@
           <div class="step-card">
             <div class="step-num">2</div>
             <span class="step-label">STEP 2</span>
-            <h3>선결제 및 필수 서류 안내</h3>
-            <p>필수 서류 준비 및 접수 절차 안내</p>
+            <h3>선결제 및 필수 서류 대행</h3>
+            <p>고용노동부 행정 서류 100% 일괄 대행</p>
           </div>
           <div class="step-arrow">→</div>
 
           <div class="step-card">
             <div class="step-num">3</div>
             <span class="step-label">STEP 3</span>
-            <h3>조건 충족 시 최대 90% 환급 가능</h3>
-            <p>100만원 기준 → 최대 90만원 환급 가능 → 실부담 10만원 수준</p>
+            <h3>교육 수료 후 90% 자동 환급</h3>
+            <p>100만원 결제 → 90만원 환급 → 실부담 단 10만원</p>
           </div>
         </div>
 
         <div class="process-safebox">
           <div style="font-size: 32px; margin-bottom: 12px">🛡️</div>
-          <h3>필수 서류 준비도 함께 확인!</h3>
+          <h3>복잡한 행정 서류는 NO!</h3>
           <p>
-            사측은 <b>필요 절차를 확인하시면 OK!</b> 인사 담당자 업무 부담 <span style="color: #ff6b35; font-weight: 800">완화</span>
+            사측은 <b>결제만 하시면 OK!</b> 인사 담당자 업무 부담 <span style="color: #ff6b35; font-weight: 800">ZERO</span>
           </p>
         </div>
       </div>
@@ -1413,14 +1183,14 @@
           <div class="payment-card">
             <span class="label-small" style="color: #ffb08f">PAYMENT FLOW</span>
             <h3>상담은 여기서,<br>실제 결제는 공식 페이지에서</h3>
-            <p>이 랜딩페이지의 역할은 <strong style="color: #ffffff">무료 상담 신청 페이지 안내</strong>입니다. 전화 상담 후 맞는 과정과 일정이 확인되면, 담당자가 RAPA AI 공식 신청 페이지에서 결제를 진행할 수 있도록 안내드립니다.</p>
+            <p>이 랜딩페이지의 역할은 <strong style="color: #ffffff">무료 상담 신청 접수</strong>입니다. 전화 상담 후 맞는 과정과 일정이 확인되면, 담당자가 RAPA AI 공식 신청 페이지에서 결제를 진행할 수 있도록 안내드립니다.</p>
             <ul class="payment-flow">
-              <li>1) 외부 상담 신청 페이지에서 무료 상담 접수</li>
+              <li>1) 이 페이지에서 무료 상담 신청 접수</li>
               <li>2) 전화로 기업 상황·희망 일정·수강 인원 확인</li>
               <li>3) 기본 과정 또는 커스텀 과정 여부 확정</li>
               <li>4) RAPA AI 공식 신청 페이지에서 실제 결제 진행</li>
             </ul>
-            <a class="btn-primary payment-link" href="https://rapa-ai.or.kr/contact">RAPA 공식 상담 신청하기 →</a>
+            <a class="btn-primary payment-link" href="https://rapa-ai.or.kr/contact" target="_blank" rel="noopener noreferrer">RAPA 공식 교육 일정 보기 →</a>
             <p class="payment-note">※ 기본 과정은 공식 페이지 공개 과정 기준이며, 12인 이상 단체는 별도 커리큘럼 협의 후 안내됩니다.</p>
           </div>
         </div>
@@ -1477,9 +1247,9 @@
         <div>
           <span class="label-small">FREE CONSULTATION</span>
           <h2 class="section-title">1:1 맞춤형<br>무료 상담 신청</h2>
-          <p class="section-subtitle">상담 신청 후 담당자가 연락드립니다</p>
+          <p class="section-subtitle">담당자가 영업일 기준 24시간 내 연락드립니다</p>
           <ul class="form-info-list">
-            <li>상담 시 환급 가능 금액 확인</li>
+            <li>환급 가능 금액 즉시 시뮬레이션</li>
             <li>단체(12인+) 커스텀 코스 안내</li>
             <li>전화 상담 후 RAPA 공식 결제 페이지 안내</li>
             <li>강요·반복 연락 절대 NO</li>
@@ -1487,17 +1257,76 @@
         </div>
 
         <div class="form-card">
-          <div id="lead-form">
-            <h3 class="consult-notice-title">상담 신청은 RAPA 공식 페이지에서 접수됩니다</h3>
-            <p class="consult-notice-text">아래 버튼을 누르면 외부 상담 신청 페이지로 이동합니다.</p>
-            <ul class="consult-check-list">
-              <li>기업 상황과 희망 일정 확인</li>
-              <li>환급 가능 여부와 필요 절차 안내</li>
-              <li>단체 교육 및 커스텀 과정 상담</li>
-            </ul>
-            <a href="https://rapa-ai.or.kr/contact" class="btn-primary form-submit-btn">외부 상담 신청 페이지 열기 →</a>
-            <p class="form-note">※ 이 페이지에서는 상담 정보를 저장하지 않습니다. 상담 신청은 RAPA 공식 페이지에서 접수됩니다.</p>
-          </div>
+          <form id="lead-form">
+            <div class="form-group">
+              <div class="label-wrapper">
+                <label for="companyName">기업명</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="companyType" value="법인" checked=""> 법인</label>
+                  <label><input type="radio" name="companyType" value="개인사업자"> 개인사업자</label>
+                </div>
+              </div>
+              <input type="text" id="companyName" placeholder="주식회사 OOO" required="">
+            </div>
+
+            <div class="form-group half-grid">
+              <div>
+                <label for="managerName">담당자 성명</label>
+                <input type="text" id="managerName" placeholder="홍길동" required="">
+              </div>
+              <div>
+                <label for="managerPosition">직책</label>
+                <input type="text" id="managerPosition" placeholder="예: 대표, 인사팀장" required="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">연락처</label>
+              <input type="tel" id="phone" placeholder="010-0000-0000" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="email">이메일</label>
+              <input type="email" id="email" placeholder="example@company.com" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="headcount">예상 수강 인원</label>
+              <select id="headcount" name="headcount" required="">
+                <option value="">선택해주세요</option>
+                <option value="1-5명">1-5명</option>
+                <option value="6-11명">6-11명</option>
+                <option value="12명 이상">12명 이상</option>
+              </select>
+              <div id="custom-alert">
+                🎁 12인 이상 단체 신청 감지! '단독 커스텀 코스 + AI 전문가 역섭외' 안내를 함께 받으실 수 있습니다.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="preferredDate">희망 일정</label>
+              <p class="schedule-caption">복수로 지정 가능하며, 대략적인 일정을 기재해주세요. 단 지원사업의 예산이 모두 소진될 경우 환급이 불가할 수 있어 가까운 일정을 정해주세요</p>
+              <textarea id="preferredDate" rows="3" placeholder="예: 6월 말 / 7월 첫째 주 / 평일 오후 선호 / 화·목 가능 등"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="topic">희망 교육 주제 (선택)</label>
+              <textarea id="topic" rows="2" placeholder="예: 마케팅팀 광고 카피 자동화, CS 챗봇 구축 등"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="expert">역섭외 희망 전문가 (선택)</label>
+              <input type="text" id="expert" placeholder="예: OOO 교수, OOO 대표">
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="agree" name="agree" required="">
+              <label for="agree" style="margin-bottom: 0; font-weight: 400">[필수] 개인정보 수집·이용에 동의합니다</label>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit-btn">무료 상담 신청하기 →</button>
+            <p class="form-note">※ 제출하신 정보는 상담 목적으로만 사용되며, 실제 신청 및 결제는 상담 후 RAPA 공식 페이지에서 진행됩니다.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -1517,7 +1346,12 @@
     </footer>
 
 
-    <a href="https://rapa-ai.or.kr/contact" class="sticky-cta"> 💬 무료 상담 신청</a>
+    <a href="#consult-form" class="sticky-cta"> 💬 무료 상담 신청</a>
 
-  </body>
-</html>
+
+
+
+
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>
