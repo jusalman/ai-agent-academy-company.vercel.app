@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-KR" data-theme="light" style=""><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true">
+<html lang="ko-KR" data-theme="light" style=""><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&amp;display=swap" rel="stylesheet" data-editor-preserved="true">
 
 
     <title>단 10만 원으로 구축하는 AI 에이전트 시스템 | 기업 전용 정부 지원 교육</title>
@@ -889,6 +889,28 @@
 
       /* Responsive */
       @media (max-width: 768px) {
+        body {
+          overflow-x: hidden;
+          padding-bottom: 80px;
+        }
+        .container {
+          padding: 0 18px;
+        }
+        header.top-nav .container {
+          gap: 12px;
+        }
+        .logo {
+          min-width: 0;
+          font-size: 16px;
+          line-height: 1.2;
+        }
+        .header-cta {
+          flex: 0 0 auto;
+          min-height: 40px;
+          padding: 8px 12px;
+          font-size: 12px;
+          white-space: nowrap;
+        }
         .hero-grid,
         .ps-grid,
         .ko-grid,
@@ -899,6 +921,23 @@
         .schedule-grid,
         .official-list {
           grid-template-columns: 1fr;
+          min-width: 0;
+        }
+        .hero-grid,
+        .form-grid,
+        .official-grid {
+          gap: 28px;
+        }
+        .hero-content,
+        .hero-card,
+        .ps-card,
+        .ko-card,
+        .step-card,
+        .form-card,
+        .official-card,
+        .payment-card,
+        .testimonial-card {
+          min-width: 0;
         }
         .ps-arrow {
           transform: rotate(90deg);
@@ -910,14 +949,50 @@
         }
         .hero h1 {
           font-size: 32px;
+          line-height: 1.18;
+        }
+        .hero-sub {
+          font-size: 17px;
+          line-height: 1.65;
+          overflow-wrap: break-word;
+        }
+        .hero-card,
+        .ps-card,
+        .ko-card,
+        .step-card,
+        .form-card,
+        .official-card,
+        .payment-card,
+        .testimonial-card,
+        .testimonial-summary {
+          padding: 24px;
+        }
+        .hero-card-cta,
+        .form-submit-btn,
+        .payment-link {
+          min-height: 52px;
+          padding: 14px 16px;
+          line-height: 1.35;
+        }
+        .seats-label,
+        .payment-flow li,
+        .testimonial-card p,
+        .form-info-list li,
+        .official-list-item strong {
+          overflow-wrap: anywhere;
         }
         section {
-          padding: 50px 0;
+          padding: 52px 0;
         }
         .process-banner {
           flex-direction: column;
           text-align: center;
           gap: 8px;
+          font-size: 16px;
+          padding: 16px 20px;
+        }
+        .process-banner span:nth-child(2) {
+          display: none;
         }
         .form-group.half-grid {
           grid-template-columns: 1fr;
@@ -925,6 +1000,38 @@
         .testimonial-summary {
           flex-direction: column;
           align-items: flex-start;
+        }
+        footer {
+          padding-bottom: 108px;
+        }
+        .footer-flex {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 18px;
+        }
+        .footer-flex > div {
+          width: 100%;
+          text-align: left !important;
+        }
+        .sticky-cta {
+          right: 16px;
+          bottom: 16px;
+          min-height: 52px;
+          padding: 14px 18px;
+          font-size: 15px;
+          line-height: 1.3;
+        }
+      }
+
+      @media (max-width: 430px) {
+        body {
+          padding-bottom: 0;
+        }
+        footer {
+          padding-bottom: 40px;
+        }
+        .sticky-cta {
+          display: none;
         }
       }
     </style>
@@ -1016,7 +1123,7 @@
             <span class="ps-label after">✓ AFTER</span>
             <h3>업무를 자동화하는 'AI 에이전트 구축'</h3>
             <ul class="ps-list">
-              <li>실패 딛고 구현까지, 쉽게 쓸 수 있어 Ai습관화</li>
+              <li>실패 딛고 구현까지, 쉽게 쓸 수 있어 AI습관화</li>
               <li><span style="color: rgb(255, 255, 255);
         font-family: Pretendard, 'Noto Sans KR', sans-serif;
         font-size: 16px;
