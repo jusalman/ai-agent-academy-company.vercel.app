@@ -1455,6 +1455,52 @@
 
     <a href="#consult-form" class="sticky-cta"> 💬 무료 상담 신청</a>
 
+  <script>
+    (function () {
+      var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwZNb8u5N4g51Tanis8Fg1mXd3imlqk4OstsXX_GTz2fgTK-QScsOR6L3KOdYwz3YwT/exec';
+
+      document.getElementById('lead-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        var btn = this.querySelector('.form-submit-btn');
+        var originalText = btn.textContent;
+        btn.textContent = '전송 중...';
+        btn.disabled = true;
+
+        var data = {
+          companyName: document.getElementById('companyName').value,
+          managerName: document.getElementById('managerName').value,
+          managerPosition: document.getElementById('managerPosition').value,
+          phone: document.getElementById('phone').value,
+          email: document.getElementById('email').value,
+          headcount: document.getElementById('headcount').value,
+          preferredDate: document.getElementById('preferredDate').value,
+          topic: document.getElementById('topic').value,
+          expert: document.getElementById('expert').value
+        };
+
+        try {
+          await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            mode: 'no-cors'
+          });
+
+          document.getElementById('lead-form').innerHTML =
+            '<div style="text-align:center;padding:48px 0;">' +
+              '<div style="font-size:56px;margin-bottom:16px;">✅</div>' +
+              '<h3 style="font-size:24px;color:var(--deep-navy);margin-bottom:12px;">신청이 완료되었습니다!</h3>' +
+              '<p style="color:var(--text-gray);">담당자가 영업일 기준 1~2일 내로 연락드리겠습니다.</p>' +
+            '</div>';
+        } catch (err) {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          alert('전송 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+        }
+      });
+    })();
+  </script>
+
 
 
 
