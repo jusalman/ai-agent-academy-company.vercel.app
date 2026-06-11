@@ -1,8 +1,10 @@
 var TOTAL_SEATS = 20;
 var DEFAULT_SHEET_NAME = '실부담10%';
+
 var ALLOWED_SHEET_NAMES = {
   '실부담10%': true,
-  '실부담0%': true
+  '실부담0원': true,
+  '지원금증정': true
 };
 
 var HEADERS = [
@@ -20,7 +22,8 @@ var HEADERS = [
 ];
 
 function doGet(e) {
-  var sheetName = getSheetName_(e && e.parameter ? e.parameter : {});
+  var params = e && e.parameter ? e.parameter : {};
+  var sheetName = getSheetName_(params);
   var sheet = getTargetSheet_(sheetName);
   ensureHeader_(sheet);
 
@@ -77,7 +80,7 @@ function doPost(e) {
 }
 
 function getSheetName_(data) {
-  var requested = data && data.sheetTab ? String(data.sheetTab) : DEFAULT_SHEET_NAME;
+  var requested = data && data.sheetTab ? String(data.sheetTab).trim() : DEFAULT_SHEET_NAME;
   return ALLOWED_SHEET_NAMES[requested] ? requested : DEFAULT_SHEET_NAME;
 }
 

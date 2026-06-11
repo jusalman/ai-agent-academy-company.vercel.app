@@ -1470,10 +1470,10 @@
 
   <script>
     (function () {
-      var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxyj2eu8iTEnpIrWQBnzZTOG-2Tq6MRmrN69lEyVnFe0YyFZymnUdNQELyL2hXjXKLX/exec';
+      var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwd91wmsyA41FyQupKgUObbI8koyMpoAJbtMH_28-BLehPHFVO545uaWcKrMxi3h9Px/exec';
 
       // 잔여 좌석 자동 업데이트
-      fetch(APPS_SCRIPT_URL + '?action=seats&sheetTab=' + encodeURIComponent('실부담0%'))
+      fetch(APPS_SCRIPT_URL + '?action=seats&sheetTab=' + encodeURIComponent('실부담0원'))
         .then(function(r) { return r.json(); })
         .then(function(data) {
           if (data && typeof data.remaining === 'number') {
@@ -1586,8 +1586,8 @@
         btn.disabled = true;
 
         var data = {
-          landingVariant: 'academy2_실부담0%',
-          sheetTab: '실부담0%',
+          landingVariant: 'academy2_실부담0원',
+          sheetTab: '실부담0원',
           companyName: document.getElementById('companyName').value,
           managerName: document.getElementById('managerName').value,
           managerPosition: document.getElementById('managerPosition').value,
