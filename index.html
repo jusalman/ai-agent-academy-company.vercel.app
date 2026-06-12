@@ -70,6 +70,9 @@
       .text-center {
         text-align: center;
       }
+      .nowrap {
+        white-space: nowrap;
+      }
       .section-title {
         font-size: 36px;
         font-weight: 800;
@@ -158,6 +161,7 @@
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 20px;
+        word-break: keep-all;
       }
       .hero h1 {
         font-size: 48px;
@@ -169,6 +173,7 @@
         font-size: 20px;
         color: var(--text-light);
         margin-bottom: 32px;
+        word-break: keep-all;
       }
       .hero-badges {
         display: flex;
@@ -182,6 +187,7 @@
         border-radius: 30px;
         font-size: 15px;
         font-weight: 600;
+        word-break: keep-all;
       }
 
       .hero-card {
@@ -204,12 +210,15 @@
         padding: 4px 10px;
         border-radius: 4px;
         margin-bottom: 12px;
+        word-break: keep-all;
       }
       .seats-label {
         font-size: 16px;
         font-weight: 600;
         color: var(--text-gray);
         display: block;
+        word-break: keep-all;
+        overflow-wrap: break-word;
       }
       .seats-number {
         font-size: 36px;
@@ -244,6 +253,7 @@
         font-size: 32px;
         font-weight: 800;
         color: var(--orange);
+        white-space: nowrap;
       }
       .price-note {
         display: block;
@@ -974,7 +984,7 @@
         .hero-sub {
           font-size: 17px;
           line-height: 1.65;
-          overflow-wrap: break-word;
+          word-break: keep-all;
         }
         .hero-card,
         .ps-card,
@@ -994,7 +1004,6 @@
           padding: 14px 16px;
           line-height: 1.35;
         }
-        .seats-label,
         .payment-flow li,
         .testimonial-card p,
         .form-info-list li,
@@ -1074,7 +1083,7 @@
         <div class="hero-content">
           <span class="hero-badge-top">🏢 기업 전용 상담 링크</span>
           <h1>우리 회사 맞춤형<br><span style="color: #0ea5a4">AI 에이전트 워크샵</span></h1>
-          <p class="hero-sub">고용보험 가입 사업장 대상 | 조건 충족 시 실부담 0원 가능<br>1일 7시간 집중 과정</p>
+          <p class="hero-sub">고용보험 가입 사업장 대상 | 조건 충족 시 실부담 0원 가능<br><span class="nowrap">1일 7시간 집중 과정</span></p>
           <div class="hero-badges">
             <div class="hero-badge-item">⏱ 1일 7시간 단기 집중 코스</div>
             <div class="hero-badge-item">👥 기수당 최대 20명 선착순 마감</div>
