@@ -21,15 +21,14 @@
   <text x="88" y="98" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0ea5a4">기업 전용 상담 링크</text>
 
   <!-- 메인 타이틀 -->
-  <text x="72" y="200" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#ffffff">조건 충족 시 실부담 0원</text>
-  <text x="72" y="280" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#ffffff">가능 여부를 확인하는</text>
-  <text x="72" y="360" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#0ea5a4">AI 에이전트 워크샵</text>
+  <text x="72" y="230" font-family="Arial, sans-serif" font-size="76" font-weight="900" fill="#ffffff">우리 회사 맞춤형</text>
+  <text x="72" y="330" font-family="Arial, sans-serif" font-size="76" font-weight="900" fill="#0ea5a4">AI 에이전트 워크샵</text>
 
   <!-- 구분선 -->
   <rect x="72" y="400" width="80" height="4" rx="2" fill="#0ea5a4"/>
 
   <!-- 서브 텍스트 -->
-  <text x="72" y="450" font-family="Arial, sans-serif" font-size="26" fill="#b8c5d6">고용보험 가입 사업장 대상  |  기업별 지원 조건 상담  |  1일 7시간 단기 집중</text>
+  <text x="72" y="450" font-family="Arial, sans-serif" font-size="26" fill="#b8c5d6">고용보험 가입 사업장 대상  |  조건 충족 시 실부담 0원 가능  |  1일 7시간 집중 과정</text>
 
   <!-- 하단 정보 -->
   <text x="72" y="560" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.5)">한국생산성본부 주관 2026 인재키움 사업</text>
@@ -38,7 +37,7 @@
   <rect x="860" y="160" width="280" height="200" rx="16" fill="rgba(255,255,255,0.07)" stroke="rgba(14,165,164,0.4)" stroke-width="1.5"/>
   <text x="870" y="205" font-family="Arial, sans-serif" font-size="16" fill="#b8c5d6" text-decoration="line-through">정가 100만원(인당)</text>
   <text x="870" y="260" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#0ea5a4">0원 가능</text>
-  <text x="870" y="300" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">조건 충족 시 실부담</text>
+  <text x="870" y="300" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">기업 지원 조건 상담</text>
   <rect x="870" y="322" width="240" height="2" fill="rgba(255,255,255,0.1)"/>
   <text x="870" y="348" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)">✓ 영업일 24시간 내 답변</text>
 </svg>
