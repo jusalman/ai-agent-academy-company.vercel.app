@@ -37,8 +37,7 @@
   <!-- 우측 가격 박스 -->
   <rect x="860" y="160" width="280" height="200" rx="16" fill="rgba(255,255,255,0.07)" stroke="rgba(14,165,164,0.4)" stroke-width="1.5"/>
   <text x="870" y="205" font-family="Arial, sans-serif" font-size="16" fill="#b8c5d6">기업 맞춤형 AI워크샵</text>
-  <text x="870" y="260" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#0ea5a4">이 링크 전용</text>
-  <text x="870" y="302" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#0ea5a4">혜택</text>
+  <text x="870" y="274" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#0ea5a4">0원 가능</text>
   <rect x="870" y="334" width="240" height="2" fill="rgba(255,255,255,0.1)"/>
   <text x="870" y="354" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)">✓ 영업일 24시간 내 답변</text>
 </svg>
